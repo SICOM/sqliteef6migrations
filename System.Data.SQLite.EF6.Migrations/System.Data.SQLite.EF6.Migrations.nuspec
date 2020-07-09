@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>System.Data.SQLite.EF6.Migrations</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>SICOM</authors>
+    <owners>$author$</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <description>SQLite Migration Package</description>
+    <copyright>Copyright 2020</copyright>
+    <tags>SQLite Migration</tags>
+  </metadata>
+</package>
