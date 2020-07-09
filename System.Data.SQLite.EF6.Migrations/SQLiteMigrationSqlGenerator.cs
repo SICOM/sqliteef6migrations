@@ -360,10 +360,8 @@ namespace System.Data.SQLite.EF6.Migrations
         private string GenerateSqlStatementConcrete(DropIndexOperation migrationOperation)
         {
             SQLiteDdlBuilder ddlBuilder = new SQLiteDdlBuilder();
-            ddlBuilder.AppendSql("DROP INDEX ");
+            ddlBuilder.AppendSql("DROP INDEX IF EXISTS");
             ddlBuilder.AppendIdentifier(SQLiteProviderManifestHelper.GetFullIdentifierName(migrationOperation.Table, migrationOperation.Name));
-            ddlBuilder.AppendSql(" ON ");
-            ddlBuilder.AppendIdentifier(migrationOperation.Table);
             return ddlBuilder.GetCommandText();
         }
 
